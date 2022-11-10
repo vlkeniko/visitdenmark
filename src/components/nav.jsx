@@ -15,7 +15,11 @@ export default function Nav() {
         </div>
 
         <div className="navlink-container">
-          <NavLink className="navlink" to="/otherpage">Other Page</NavLink>
+          <NavLink className="navlink" to="/play">Play</NavLink>
+        </div>
+
+        <div className="navlink-container">
+          <NavLink className="navlink" to="/discount">Discount</NavLink>
         </div>
 
       </nav>
