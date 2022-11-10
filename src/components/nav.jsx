@@ -18,7 +18,7 @@ export default function Nav() {
             <img
               src={Explore}
               alt="explore"
-              style={{ width: "20px", height: "auto"}}
+              style={{ width: "15px", height: "auto"}}
             />
 
             <p>Explore</p>
@@ -31,7 +31,7 @@ export default function Nav() {
             <img
               src={Play}
               alt="play"
-              style={{ width: "20px"}}
+              style={{ width: "15px"}}
             />
             <p>Play</p>
           </NavLink>
@@ -42,7 +42,7 @@ export default function Nav() {
             <img
               src={Discount}
               alt="discount"
-              style={{ width: "20px"}}
+              style={{ width: "15px"}}
             />
 
             <p>Discounts</p>

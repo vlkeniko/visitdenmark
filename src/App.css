@@ -24,12 +24,14 @@ nav {
   flex-direction: row;
   justify-content: space-around;
   text-decoration: none;
-  font-size: 10px;
+  font-size: 8px;
 }
 
-.navlink-container {
+.all-nav {
   width: 100%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
 }
@@ -37,7 +39,7 @@ nav {
 .navlink {
   padding: 12px;
   text-decoration: none;
-  font-size: 10px;
+  font-size: 8px;
   display: flex;
   flex-direction: column;
   justify-content: center;
