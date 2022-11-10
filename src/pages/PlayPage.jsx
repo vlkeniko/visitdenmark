@@ -6,8 +6,9 @@ import Nav from '../components/nav'
 export default function PlayPage() {
   return (
     <>
-    <div>PlayPage</div>
     <Header/>
+    <div>PlayPage</div>
+    
     <Nav/>
 
     </>

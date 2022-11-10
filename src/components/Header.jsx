@@ -10,16 +10,14 @@ export default function Header() {
         <img
           src={heartlogo}
           alt="coin"
-          style={{ width: "60px", height: "60px" }}
+          style={{ width: "15px", height: "15px" }}
         />
       </div>
 
       <div className="info">
-        <div className="navlink-container">
           <NavLink className="navlink" to="/info">
             i
-          </NavLink>
-        </div>
+          </NavLink>   
       </div>
     </div>
   );

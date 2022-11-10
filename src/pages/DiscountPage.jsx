@@ -6,8 +6,9 @@ import Nav from "../components/nav";
 export default function DiscountPage() {
   return (
     <>
-      <div>DiscountPage</div>
       <Header />
+      <div>DiscountPage</div>
+
       <DiscountDescription />
       <DiscountList />
       <Nav />

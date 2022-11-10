@@ -5,8 +5,9 @@ import Nav from '../components/nav'
 export default function InfoPage() {
   return (
     <>
+    <Header/>
      <div>InfoPage</div>
-     <Header/>
+     
     <Nav/>
     </>
    

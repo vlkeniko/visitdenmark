@@ -6,8 +6,9 @@ import Places from "../components/Places";
 export default function HomePage() {
   return (
     <>
+    <Header />
       <div>HomePage</div>
-      <Header />
+      
       <Places />
       <Nav />
     </>
