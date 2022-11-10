@@ -11,7 +11,7 @@ export default function Nav() {
     <div className="all-nav">
       <nav>
         <div className="navlink-container">
-          <NavLink className="navlink" end to="/">Home</NavLink>
+          <NavLink className="navlink" end to="/">Explore</NavLink>
         </div>
 
         <div className="navlink-container">
@@ -21,12 +21,8 @@ export default function Nav() {
         <div className="navlink-container">
           <NavLink className="navlink" to="/discount">Discount</NavLink>
         </div>
-
       </nav>
-
-      <div className="navlink-container">
-          <NavLink className="navlink" to="/info">i</NavLink>
-        </div>
+      
     </div>
   );
 }
