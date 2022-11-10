@@ -1,14 +1,12 @@
 import React from 'react'
 import Nav from '../components/nav'
 
-
-export default function OtherPage() {
+export default function InfoPage() {
   return (
     <>
-    <div>OtherPage</div>
+     <div>InfoPage</div>
     <Nav/>
-
     </>
-    
+   
   )
 }

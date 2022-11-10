@@ -23,6 +23,10 @@ export default function Nav() {
         </div>
 
       </nav>
+
+      <div className="navlink-container">
+          <NavLink className="navlink" to="/info">i</NavLink>
+        </div>
     </div>
   );
 }
