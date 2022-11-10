@@ -1,15 +1,18 @@
-import React from 'react'
-import DiscountDescription from '../components/DiscountDescription'
-import DiscountList from '../components/DiscountList'
-import Nav from '../components/nav'
+import React from "react";
+import DiscountDescription from "../components/DiscountDescription";
+import DiscountList from "../components/DiscountList";
+import DiscountProgress from "../components/DiscountProgress";
+import Header from "../components/Header";
+import Nav from "../components/nav";
 export default function DiscountPage() {
   return (
     <>
-        <div>DiscountPage</div>
-        <DiscountDescription/>
-        <DiscountList/>
-    <Nav/>
+      <Header />
+      <div>DiscountPage</div>
+      <DiscountProgress />
+      <DiscountDescription />
+      <DiscountList />
+      <Nav />
     </>
-
-  )
+  );
 }
