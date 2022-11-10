@@ -12,7 +12,7 @@ export default function DiscountList() {
           <img
             src={heartlogo}
             alt="heart"
-            style={{ width: "60px", height: "60px" }}
+            style={{ width: "15px" }}
           />
         </div>
       </div>
