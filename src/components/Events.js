@@ -7,11 +7,11 @@
 */
 
 import React, { useEffect, useState } from 'react'
-import PlaceItem from "./PlaceItem";
+import EventsItem from "./PlaceItem";
 
-export default function Places()
+export default function Activities()
 {
-    const[categories, setPlaces] = useState([]);
+    const[places, setPlaces] = useState([]);
 
     useEffect(() => {
 
@@ -25,7 +25,7 @@ export default function Places()
            try{
                 for (var i = 0; i < data.length; i++) {
                 var place = data[i];
-               if(place.MainCategory.Id == '62')
+               if(place.MainCategory.Id == '58')
                {
                    // console.log(place.Name + ' ' + place.MainCategory.Name);
                     filteredrest.push(place)
@@ -42,14 +42,14 @@ export default function Places()
 
     return(
     <>
-    <h2>Places To Eat</h2>
+    <h2>Events</h2>
     <div className='card-carousel'>
     {
-           categories.map(place =>(<PlaceItem place={place} key={place.id} />))
+           places.map(place =>(<EventsItem place={place} key={place.id} />))
         }
 
     </div>
-     
+      
     </>
     )    
 }

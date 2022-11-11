@@ -7,11 +7,11 @@
 */
 
 import React, { useEffect, useState } from 'react'
-import PlaceItem from "./PlaceItem";
+import AttractionsItem from './AttractionsItem';
 
 export default function Places()
 {
-    const[categories, setPlaces] = useState([]);
+    const[places, setPlaces] = useState([]);
 
     useEffect(() => {
 
@@ -25,14 +25,14 @@ export default function Places()
            try{
                 for (var i = 0; i < data.length; i++) {
                 var place = data[i];
-               if(place.MainCategory.Id == '62')
+               if(place.MainCategory.Id == '3')
                {
                    // console.log(place.Name + ' ' + place.MainCategory.Name);
                     filteredrest.push(place)
                }
             }
            }catch (error) {
-            console.log('Oh come on! These should be easy peeps! What')
+            console.log('ajajajajjj')
           }
             setPlaces(filteredrest);
         }
@@ -42,14 +42,13 @@ export default function Places()
 
     return(
     <>
-    <h2>Places To Eat</h2>
-    <div className='card-carousel'>
+    <h1>Attractions</h1>
+    <div className="card-carousel">
     {
-           categories.map(place =>(<PlaceItem place={place} key={place.id} />))
+           places.map(place =>(<AttractionsItem place={place} key={place.id} />))
         }
-
     </div>
-     
+      
     </>
     )    
 }

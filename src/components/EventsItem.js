@@ -5,7 +5,7 @@
 */
 
 
-export default function PlaceItem({place}){
+export default function ActivitiesItem({place}){
     return <div className="card">
             <div>{place.Category.Name}</div>
         </div>;

@@ -1,4 +1,8 @@
-import React, { useState } from 'react';
+/*Bocsi volt itt egy error de majd kitorlom a kommentet */
+
+
+
+/* import React, { useState } from 'react';
 import {QrReader, useQrReader} from 'react-qr-reader';
 
 import styles from './QRScanner.css';
@@ -45,4 +49,4 @@ const QRScanner = () => {
 	);
 }
 
-export default QRScanner;
+export default QRScanner; */
