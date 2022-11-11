@@ -4,6 +4,7 @@ import HomePage from "./pages/ExplorePage";
 import PlayPage from "./pages/PlayPage";
 import DiscountPage from "./pages/DiscountPage";
 import InfoPage from "./pages/InfoPage";
+import ScannerPage from "./pages/ScannerPage";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
         <Route path="/play" element={<PlayPage />} />
         <Route path="/discount" element={<DiscountPage />} />
         <Route path="/info" element={<InfoPage />} />
+        <Route path="/scanner" element={<ScannerPage />} />
       </Routes>
     </div>
   );
