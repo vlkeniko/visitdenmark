@@ -9,7 +9,7 @@
 import React, { useEffect, useState } from 'react'
 import AttractionsItem from './AttractionsItem';
 
-export default function Places()
+export default function Attractions()
 {
     const[places, setPlaces] = useState([]);
 
@@ -25,7 +25,7 @@ export default function Places()
            try{
                 for (var i = 0; i < data.length; i++) {
                 var place = data[i];
-               if(place.MainCategory.Id == '3')
+               if(place.MainCategory.Id === '3')
                {
                    // console.log(place.Name + ' ' + place.MainCategory.Name);
                     filteredrest.push(place)

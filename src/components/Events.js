@@ -9,7 +9,7 @@
 import React, { useEffect, useState } from 'react'
 import EventsItem from "./PlaceItem";
 
-export default function Activities()
+export default function Events()
 {
     const[places, setPlaces] = useState([]);
 
@@ -25,7 +25,7 @@ export default function Activities()
            try{
                 for (var i = 0; i < data.length; i++) {
                 var place = data[i];
-               if(place.MainCategory.Id == '58')
+               if(place.MainCategory.Id === '58')
                {
                    // console.log(place.Name + ' ' + place.MainCategory.Name);
                     filteredrest.push(place)
