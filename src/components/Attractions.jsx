@@ -25,7 +25,7 @@ export default function Attractions()
            try{
                 for (var i = 0; i < data.length; i++) {
                 var place = data[i];
-               if(place.MainCategory.Id === '3')
+               if(place.MainCategory.Id === 3)
                {
                    // console.log(place.Name + ' ' + place.MainCategory.Name);
                     filteredrest.push(place)
@@ -45,7 +45,7 @@ export default function Attractions()
     <h1>Attractions</h1>
     <div className="card-carousel">
     {
-           places.map(place =>(<AttractionsItem place={place} key={place.id} />))
+           places.map(place =>(<AttractionsItem attraction={place} key={place.id} />))
         }
     </div>
       

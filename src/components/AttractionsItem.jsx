@@ -4,19 +4,11 @@
  *
  */
 
-export default function AttractionsItem({ place }) {
-/*     function attractions() {
-if(
-    place.Category.Name = "Attractions"
-){
-document.getElementById(props.itemid + "needed").style.display = "none";
-}
-    } */
-
+export default function AttractionsItem({ attraction }) {
   return (
-    <div  className="card">
-
-      <div>{place.Category.Name}</div>
+    <div className="card">
+      <div>{attraction.Category.Name}</div>
+      <div>{attraction.Name}</div>
     </div>
   );
 }

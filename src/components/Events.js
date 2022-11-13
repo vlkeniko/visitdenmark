@@ -25,7 +25,7 @@ export default function Events()
            try{
                 for (var i = 0; i < data.length; i++) {
                 var place = data[i];
-               if(place.MainCategory.Id === '58')
+               if(place.MainCategory.Id === 58)
                {
                    // console.log(place.Name + ' ' + place.MainCategory.Name);
                     filteredrest.push(place)
