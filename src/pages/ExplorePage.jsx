@@ -1,12 +1,9 @@
 import React from "react";
-import Places from "../components/Places";
-import Attractions from "../components/Attractions";
-import Activities from "../components/Activities";
-import Events from "../components/Events";
 import Header from "../components/Header";
 import Nav from "../components/nav";
 
 import { getLocation } from "../utils/GeoLocation";
+import Subcategories from "../components/Subcategories";
 
 export default function ExplorePage() {
   getLocation();
@@ -14,10 +11,10 @@ export default function ExplorePage() {
   return (
     <>
       <Header />
-      <Attractions />
-      <Places />
-      <Activities />
-      <Events />
+      <Subcategories id={3} />
+      <Subcategories id={62} />
+      <Subcategories id={36} />
+      <Subcategories id={58} />
       <Nav />
     </>
   );
