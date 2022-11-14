@@ -13,6 +13,7 @@ import FamilyTasks from "./pages/playtasks/FamilyTasks";
 import NightLifeTasks from "./pages/playtasks/NightLifeTasks";
 import CultureTasks from "./pages/playtasks/CultureTasks";
 import NatureTasks from "./pages/playtasks/NatureTasks";
+import Quiz from "./components/Quiz";
 
 export default function App() {
   return (
@@ -31,6 +32,7 @@ export default function App() {
         <Route path="/nightlifetasks" element={<NightLifeTasks />} />
         <Route path="/culturetasks" element={<CultureTasks />} />
         <Route path="/naturetasks" element={<NatureTasks />} />
+        <Route path="/quiz" element={<Quiz />} />
         
       </Routes>
     </div>
