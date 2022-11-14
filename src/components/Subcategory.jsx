@@ -13,13 +13,12 @@ import restaurant from "../icons/restaurant.png";
 export default function Subcategory({ subcategory }) {
   return (
     <div className="card">
-      <div>{subcategory.Name}</div>
+      {/*This might be crazy, but it displays icons based on their name*/}
 
-      {/*This might be crazy, but it displays icons based on their name xD*/}
-      {subcategory?.name === "Zoos and animal parks" ? (
+      {subcategory?.name === "Zoos and Animal Parks" ? (
         <img className="card-icon" src={bear} alt="icon" />
-      ) : subcategory.Name === "Architecture and Urban spaces" ||
-        subcategory.Name === "Curches and Abbeys" ||
+      ) : subcategory.Name === "Architecture and Urban Spaces" ||
+        subcategory.Name === "Churches and Abbeys" ||
         subcategory.Name === "Ancient Monuments & Ruins" ||
         subcategory.Name === "Castles and manor houses" ? (
         <img className="card-icon" src={castle} alt="icon" />
@@ -51,16 +50,23 @@ export default function Subcategory({ subcategory }) {
         subcategory.Name === "Cafés" ||
         subcategory.Name === "Local Specialties" ? (
         <img className="card-icon" src={restaurant} alt="icon" />
-      ) : subcategory.Id === 58?(
-        
-        <img className="card-icon" src={park} alt="icon" style={{display: 'none'}} />
-      ): (
-        <img className="card-icon" src={restaurant} alt="icon" />
+      ) : subcategory.Id === 58 ? (
+        <img
+          className="card-icon"
+          src={park}
+          alt="icon"
+          style={{ display: "none" }}
+        />
+      ) : (
+        ""
       )}
+
+      <div className="card-title">{subcategory.Name}</div>
+
       {/* If the id is 58, we are looking at an event, and in that case we get the first available image
       from the event's gallery */}
       {subcategory.MainCategory?.Id === 58 ? (
-        <img
+        <img className="event-image"
           alt={subcategory.Files[0]?.AltText}
           src={subcategory.Files[0]?.Uri}
         />

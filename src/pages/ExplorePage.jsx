@@ -4,6 +4,7 @@ import Nav from "../components/nav";
 
 import { getLocation } from "../utils/GeoLocation";
 import Subcategories from "../components/Subcategories";
+import PlayCarousel from "../components/PlayCarousel";
 
 export default function ExplorePage() {
   getLocation();
@@ -11,6 +12,7 @@ export default function ExplorePage() {
   return (
     <>
       <Header />
+      <PlayCarousel/>
       <Subcategories id={3} />
       <Subcategories id={62} />
       <Subcategories id={36} />

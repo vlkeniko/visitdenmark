@@ -5,6 +5,10 @@ import PlayPage from "./pages/PlayPage";
 import DiscountPage from "./pages/DiscountPage";
 import InfoPage from "./pages/InfoPage";
 import ScannerPage from "./pages/ScannerPage";
+import PlayFamily from "./pages/playpages/PlayFamily";
+import PlayNightlife from "./pages/playpages/PlayNightlife";
+import PlayCulture from "./pages/playpages/PlayCulture";
+import PlayNature from "./pages/playpages/PlayNature";
 
 export default function App() {
   return (
@@ -15,6 +19,10 @@ export default function App() {
         <Route path="/discount" element={<DiscountPage />} />
         <Route path="/info" element={<InfoPage />} />
         <Route path="/scanner" element={<ScannerPage />} />
+        <Route path="/playfamily" element={<PlayFamily />} />
+        <Route path="/playnightlife" element={<PlayNightlife />} />
+        <Route path="/playculture" element={<PlayCulture />} />
+        <Route path="/playnature" element={<PlayNature />} />
       </Routes>
     </div>
   );
