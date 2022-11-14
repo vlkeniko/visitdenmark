@@ -80,6 +80,8 @@ nav {
   width: 150px;
   height: 70px;
   background-color:rgb(51, 51, 138);
+  justify-content: center;
+  flex-direction: column;
 }
 
 .card-carousel{
@@ -90,6 +92,11 @@ nav {
   white-space: nowrap;
   overflow-x: auto;
 
+}
+
+.card-icon{
+  width: 30px;
+  height: 30px;
 }
 
 .card-carousel::-webkit-scrollbar {
