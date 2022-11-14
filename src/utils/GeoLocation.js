@@ -2,7 +2,7 @@ export function getLocation() {
   let result = {};
 
   if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
+    navigator.geolocation.getCurrentPosition(savePosition);
     result.success = true;
   } else {
     result.error = "Geolocation is not supported by this browser.";
@@ -13,21 +13,27 @@ export function getLocation() {
   return result;
 }
 
-export function showPosition(position) {
+export function getDistance(target) {
+  let coordinates = localStorage.getItem('coordinates') ? JSON.parse(localStorage.getItem("coordinates")) : "";
+  console.log(
+    getDistanceFromLatLonInKm(
+      coordinates.latitude,
+      coordinates.longitude,
+      target.latitude,
+      target.longitude
+    ).toFixed(1)
+  );
+}
+
+export function savePosition(position) {
   let result = {};
   result.latitude = position.coords.latitude;
   result.longitude = position.coords.longitude;
+  localStorage.setItem('coordinates', JSON.stringify(result));
 
   //console.log(result);
-  console.log(
-    getDistanceFromLatLonInKm(
-      result.latitude,
-      result.longitude,
-      59.3225525,
-      13.4619422
-    ).toFixed(1)
-  );
-  return result;
+  
+  getDistance({ latitude: 59.3225525, longitude: 13.4619422 });
 }
 
 function getDistanceFromLatLonInKm(lat1, lon1, lat2, lon2) {
@@ -54,7 +60,7 @@ watchPosition({ latitude: 59.3225525, longitude: 13.4619422 });
 function watchPosition(target) {
   console.log("🚀 ~ file: GeoLocation.js ~ line 55 ~ watchPosition ~ watchPosition", watchPosition)
   console.log("🚀 ~ file: GeoLocation.js ~ line 55 ~ watchPosition ~ target", target)
-  
+
   let id;
   let options;
 
