@@ -87,4 +87,10 @@ nav {
   gap: 10px;
   overflow: auto;
   white-space: nowrap;
+  overflow-x: auto;
+
+}
+
+.card-carousel::-webkit-scrollbar {
+  display: none;
 }
