@@ -288,3 +288,32 @@ nav {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
+
+.answers{
+  display: flex;
+
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+ 
+
+}
+
+.answer-cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #00587A;
+  min-width: 150px;
+  min-height: 100px;
+}
+
+.answer-cards-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #00587A;
+  min-width: 150px;
+  min-height: 100px;
+}
