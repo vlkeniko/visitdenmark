@@ -196,3 +196,27 @@ nav {
   font-size: 22px;
   text-decoration: none;
 }
+
+.start-button{
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: none;
+  border-radius: 0%;
+  background-color: #E70013;
+  font-size: 22;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: white;
+  font-family: VisitDenmark;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.play-image{
+  width: 100%;
+  height: 200px;
+  
+}

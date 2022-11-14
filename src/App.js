@@ -9,6 +9,10 @@ import PlayFamily from "./pages/playpages/PlayFamily";
 import PlayNightlife from "./pages/playpages/PlayNightlife";
 import PlayCulture from "./pages/playpages/PlayCulture";
 import PlayNature from "./pages/playpages/PlayNature";
+import FamilyTasks from "./pages/playtasks/FamilyTasks";
+import NightLifeTasks from "./pages/playtasks/NightLifeTasks";
+import CultureTasks from "./pages/playtasks/CultureTasks";
+import NatureTasks from "./pages/playtasks/NatureTasks";
 
 export default function App() {
   return (
@@ -23,6 +27,11 @@ export default function App() {
         <Route path="/playnightlife" element={<PlayNightlife />} />
         <Route path="/playculture" element={<PlayCulture />} />
         <Route path="/playnature" element={<PlayNature />} />
+        <Route path="/familytasks" element={<FamilyTasks />} />
+        <Route path="/nightlifetasks" element={<NightLifeTasks />} />
+        <Route path="/culturetasks" element={<CultureTasks />} />
+        <Route path="/naturetasks" element={<NatureTasks />} />
+        
       </Routes>
     </div>
   );
