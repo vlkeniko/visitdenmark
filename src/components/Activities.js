@@ -7,7 +7,7 @@
 */
 
 import React, { useEffect, useState } from 'react'
-import ActivitiesItem from "./PlaceItem";
+import ActivitiesItem from "./ActivitiesItem";
 
 export default function Activities()
 {
@@ -46,7 +46,7 @@ export default function Activities()
     <div className='card-carousel'>
     { console.log(places) }
     {
-           places.map(place =>(<ActivitiesItem place={place} key={place.id} />))
+           places.map(place =>(<ActivitiesItem activity={place} key={place.id} />))
         }
 
     </div>
