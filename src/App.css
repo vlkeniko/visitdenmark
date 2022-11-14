@@ -184,7 +184,7 @@ nav {
     inset 0 0 0 10px #00587A;
 
   min-width: 150px;
-  min-height: 250px;
+  min-height: 300px;
 }
 
 .card-play-title {
@@ -194,4 +194,5 @@ nav {
   white-space: normal;
   width: 80px;
   font-size: 22px;
+  text-decoration: none;
 }
