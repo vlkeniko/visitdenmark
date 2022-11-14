@@ -85,4 +85,6 @@ nav {
   display: flex;
   flex-wrap: nowrap;
   gap: 10px;
+  overflow: auto;
+  white-space: nowrap;
 }
