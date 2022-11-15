@@ -21,7 +21,11 @@ export default function Subcategories(props) {
       <h1>{name}</h1>
       <div className="card-carousel">
         {subcategories.map((subcategory) => (
-          <Subcategory main={props.id} subcategory={subcategory} key={subcategory.id} />
+          <Subcategory
+            main={props.id}
+            subcategory={subcategory}
+            key={subcategory.id}
+          />
         ))}
       </div>
     </>

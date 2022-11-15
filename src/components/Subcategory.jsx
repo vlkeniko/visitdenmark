@@ -67,7 +67,8 @@ export default function Subcategory({ subcategory, main }) {
       {/* If the id is 58, we are looking at an event, and in that case we get the first available image
       from the event's gallery */}
       {subcategory.MainCategory?.Id === 58 ? (
-        <img className="event-image"
+        <img
+          className="event-image"
           alt={subcategory.Files[0]?.AltText}
           src={subcategory.Files[0]?.Uri}
         />
