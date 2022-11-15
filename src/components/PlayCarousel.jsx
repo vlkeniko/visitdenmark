@@ -26,7 +26,7 @@ export default function PlayCarousel() {
       
     </div>
 
-    <div className='card-play'>
+    <div className='card-play-seemore'>
       
         <h2>More</h2>
     </div>
