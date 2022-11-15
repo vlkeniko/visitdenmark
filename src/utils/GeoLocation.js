@@ -55,7 +55,7 @@ function deg2rad(deg) {
   return deg * (Math.PI / 180);
 }
 
-watchPosition({ latitude: 59.3225525, longitude: 13.4619422 });
+//watchPosition({ latitude: 59.3225525, longitude: 13.4619422 });
 
 function watchPosition(target) {
   console.log("🚀 ~ file: GeoLocation.js ~ line 55 ~ watchPosition ~ watchPosition", watchPosition)

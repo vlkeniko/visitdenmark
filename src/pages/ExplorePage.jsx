@@ -1,14 +1,10 @@
 import React from "react";
 import Header from "../components/Header";
 import Nav from "../components/nav";
-
-import { getLocation } from "../utils/GeoLocation";
 import Subcategories from "../components/Subcategories";
 import PlayCarousel from "../components/PlayCarousel";
 
 export default function ExplorePage() {
-  getLocation();
-
   return (
     <>
       <Header />
