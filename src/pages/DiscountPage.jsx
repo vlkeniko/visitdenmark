@@ -8,7 +8,6 @@ export default function DiscountPage() {
   return (
     <>
       <Header />
-      <div>DiscountPage</div>
       <DiscountProgress />
       <DiscountDescription />
       <DiscountList />
