@@ -24,11 +24,11 @@ export default function ElementItem({ element }) {
   
       <div className="uwu">
         <h1>{element.Name}</h1>
-        <p>{`${element.Address.AddressLine1}${
+        <p>{`${element.Address.AddressLine1 ? element.Address.AddressLine1 : "" }${
           element.Address.AddressLine2
-            ? ", " + element.Address.AddressLine2
+            ? `${element.Address.AddressLine1 ? "," : ""}` + element.Address.AddressLine2
             : ""
-        }, ${element.Address.PostalCode} ${element.Address.City}`}</p>
+        }${element.Address.AddressLine2 + element.Address.AddressLine1 ? "," : ""} ${element.Address.PostalCode} ${element.Address.City}`}</p>
         <p id="description-modal" onClick={handleDescription}>
           See description {">"}
         </p>
