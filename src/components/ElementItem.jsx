@@ -21,6 +21,8 @@ export default function ElementItem({ element }) {
       <div id="description-modal" onClick={handleDescription}>
         See description {">"}
       </div>
+      {/* If a gallery is needed: {element.Files.map((picture) => <img src={picture.Uri} alt={picture.AltText}/>)} */}
+      <img src={element.Files[0]?.Uri} alt={element.Files[0]?.AltText}/>
     </div>
   );
 }
