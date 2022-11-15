@@ -51,11 +51,11 @@ nav {
   flex-wrap: nowrap;
 }
 
-.nav-icon:active{
+.nav-icon:active {
   filter: invert(13%) sepia(100%) saturate(4691%) hue-rotate(332deg) brightness(60%) contrast(106%);
 }
 
-.active{
+.active {
   filter: invert(13%) sepia(100%) saturate(4691%) hue-rotate(332deg) brightness(60%) contrast(106%);
 }
 
@@ -116,7 +116,7 @@ nav {
   text-transform: uppercase;
   background-image: url("./family.png");
   background-repeat: no-repeat;
-  background-size:contain;
+  background-size: contain;
 
   line-break: loose;
   min-width: 200px;
@@ -139,7 +139,7 @@ nav {
   background-image: url("./nightlife.png");
   background-repeat: no-repeat;
   background-size: contain;
- 
+
   line-break: loose;
   min-width: 200px;
   min-height: 100px;
@@ -326,6 +326,7 @@ nav {
   min-width: 150px;
   min-height: 300px;
 }
+
 .card-play-title {
   color: white;
   text-transform: uppercase;
@@ -336,7 +337,7 @@ nav {
   text-decoration: none;
 }
 
-.start-button{
+.start-button {
   padding-bottom: 10px;
   padding-top: 10px;
   padding-left: 30px;
@@ -354,10 +355,10 @@ nav {
   margin-right: auto;
 }
 
-.play-image{
+.play-image {
   width: 100%;
   height: 200px;
-  
+
 }
 
 /* Customize the label (the container) */
@@ -394,12 +395,12 @@ nav {
 }
 
 /* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
+.container:hover input~.checkmark {
   background-color: #ccc;
 }
 
 /* When the checkbox is checked, add a blue background */
-.container input:checked ~ .checkmark {
+.container input:checked~.checkmark {
   background-color: #2196F3;
 }
 
@@ -411,7 +412,7 @@ nav {
 }
 
 /* Show the checkmark when checked */
-.container input:checked ~ .checkmark:after {
+.container input:checked~.checkmark:after {
   display: block;
 }
 
@@ -429,16 +430,16 @@ nav {
 }
 
 
-.answers{
+.answers {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
- 
+
 
 }
 
-.answer-cards{
+.answer-cards {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -447,11 +448,57 @@ nav {
   min-height: 100px;
 }
 
-.answer-cards-right{
+.answer-cards-right {
   display: flex;
   justify-content: center;
   align-items: center;
   border: 2px solid #00587A;
   min-width: 150px;
   min-height: 100px;
+}
+
+.sub-card {
+  margin: 0px;
+  padding: 0;
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #00587A;
+  WIDTH: 100%;
+}
+
+.subc-image {
+  width: 100%;
+  MAX-WIDTH: 200PX;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+
+.subcategory-header {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.uwu {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  FONT-SIZE: 11PX;
+  color: white;
+  width: 200px;
+}
+
+.owo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
