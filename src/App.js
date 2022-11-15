@@ -15,7 +15,7 @@ import NightLifeTasks from "./pages/playtasks/NightLifeTasks";
 import CultureTasks from "./pages/playtasks/CultureTasks";
 import NatureTasks from "./pages/playtasks/NatureTasks";
 import Quiz from "./components/Quiz";
-import ConfirmLocation from "./components/ConfirmLocation";
+import Confirm from "./pages/Confirm";
 
 export default function App() {
   return (
@@ -36,7 +36,7 @@ export default function App() {
         <Route path="/culturetasks" element={<CultureTasks />} />
         <Route path="/naturetasks" element={<NatureTasks />} />
         <Route path="/quiz" element={<Quiz />} />
-        <Route path="/location" element={<ConfirmLocation />} />
+        <Route path="/location" element={<Confirm />} />
         
       </Routes>
     </div>

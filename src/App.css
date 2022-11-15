@@ -76,7 +76,9 @@ nav {
 }
 
 .discount-container {
-  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid #00587A;
   padding: 10px;
   margin: 5px;
 }
@@ -501,4 +503,19 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.precent{
+  font-size: 30px;
+  font-weight: bold;
+  color: salmon;
+}
+
+
+progress{
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 20px;
 }

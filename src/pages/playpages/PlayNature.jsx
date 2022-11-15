@@ -19,8 +19,7 @@ export default function PlayNature() {
       riddles to get many discounts that you can use in places around the
       city.
     </p>
-    <button className="start-button" onClick={() => navigate("/naturetasks")}>START</button>
-    <Nav />
+    <button className="start-button" onClick={() => navigate("/location")}>START</button>    <Nav />
   </div>
   )
 }
