@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 // import castle from '../icons/castle.png';
 // import park from '../icons/park.png';
 // import art from '../icons/art.png';
@@ -10,26 +11,26 @@ export default function PlayCarousel() {
         
 <div className="card-carousel">
 
-    <div className='card-play-family'>
+    <NavLink to='/familytasks' className='card-play-family'>
 
-    </div>
+    </NavLink>
 
-    <div className='card-play-nature'>
+    <NavLink to='/naturetasks'  className='card-play-nature'>
       
-    </div>
+    </NavLink>
 
-    <div className='card-play-culture'>
+    <NavLink to='/culturetasks'  className='card-play-culture'>
     
-    </div>
+    </NavLink>
 
-    <div className='card-play-nightlife'>
+    <NavLink to='/nightlifetasks'  className='card-play-nightlife'>
       
-    </div>
+    </NavLink>
 
-    <div className='card-play-seemore'>
+    <NavLink to='/play'>
       
-        <h2>More</h2>
-    </div>
+        <h2>More {'>'}</h2>
+    </NavLink>
 </div>
 
     </div>

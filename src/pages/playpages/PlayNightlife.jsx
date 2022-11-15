@@ -2,11 +2,13 @@ import React from 'react'
 import Nav from "../../components/nav";
 import playimage from "../../play-image.png";
 import { useNavigate } from "react-router-dom";
+import Header from '../../components/Header';
 
 export default function PlayNightlife() {
   let navigate = useNavigate();
   return (
     <div>
+      <Header/>
     <div className="img-gradient"><img className="play-image" src={playimage} alt="fam" /></div>
     <h1> Nightlife</h1>
     <p className="play-description">

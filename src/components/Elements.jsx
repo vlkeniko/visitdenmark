@@ -5,6 +5,7 @@ import attractions from "../assets/data/en/categories/attractions.json";
 import activities from "../assets/data/en/categories/activities.json";
 import placesToEat from "../assets/data/en/categories/placesToEat.json";
 import header from "../subcategoryheader.png";
+import Nav from './nav'
 
 export default function Elements() {
   // Anchor hrefs point to /maincategory-id/category-id through React router URL params
@@ -50,6 +51,7 @@ export default function Elements() {
           )
         )}
       </div>
+      <Nav/>
     </>
   );
 }
