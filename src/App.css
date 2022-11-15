@@ -99,7 +99,7 @@ nav {
   min-height: 100px;
 }
 
-.card-play {
+.card-play-family {
   padding: 5px;
   border: 10px;
   margin: 5px;
@@ -112,17 +112,83 @@ nav {
   font-size: 20px;
   color: white;
   text-transform: uppercase;
-  background-image: url("./play-image.png");
+  background-image: url("./family.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  box-shadow:
-    inset 0 0 0 6px #00587A,
-    inset 0 0 0 8px #ddd,
-    inset 0 0 0 10px #00587A;
+  background-size:contain;
+
   line-break: loose;
   min-width: 200px;
   min-height: 100px;
 }
+
+.card-play-nightlife {
+  padding: 5px;
+  border: 10px;
+  margin: 5px;
+  padding-top: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+  background-image: url("./nightlife.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+ 
+  line-break: loose;
+  min-width: 200px;
+  min-height: 100px;
+}
+
+
+.card-play-nature {
+  padding: 5px;
+  border: 10px;
+  margin: 5px;
+  padding-top: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+  background-image: url("./nature.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  line-break: loose;
+  min-width: 200px;
+  min-height: 100px;
+}
+
+
+.card-play-culture {
+  padding: 5px;
+  border: 10px;
+  margin: 5px;
+  padding-top: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+  background-image: url("./culture.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  line-break: loose;
+  min-width: 200px;
+  min-height: 100px;
+}
+
 
 .card-carousel {
   display: flex;
@@ -170,12 +236,12 @@ nav {
   justify-content: center;
 }
 
-.play-category {
+.play-category-family {
   display: flex;
   justify-content: flex-start;
   padding-left: 20px;
   align-items: center;
-  background-image: url("./play-image.png");
+  background-image: url("./family.png");
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow:
@@ -187,6 +253,56 @@ nav {
   min-height: 300px;
 }
 
+.play-category-nightlife {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px;
+  align-items: center;
+  background-image: url("./nightlife.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow:
+    inset 0 0 0 6px #00587A,
+    inset 0 0 0 8px #ddd,
+    inset 0 0 0 10px #00587A;
+
+  min-width: 150px;
+  min-height: 300px;
+}
+
+.play-category-nature {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px;
+  align-items: center;
+  background-image: url("./nature.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow:
+    inset 0 0 0 6px #00587A,
+    inset 0 0 0 8px #ddd,
+    inset 0 0 0 10px #00587A;
+
+  min-width: 150px;
+  min-height: 300px;
+}
+
+.play-category-culture {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px;
+  align-items: center;
+  background-image: url("./culture.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  box-shadow:
+    inset 0 0 0 6px #00587A,
+    inset 0 0 0 8px #ddd,
+    inset 0 0 0 10px #00587A;
+
+  min-width: 150px;
+  min-height: 300px;
+}
 .card-play-title {
   color: white;
   text-transform: uppercase;
@@ -292,7 +408,6 @@ nav {
 
 .answers{
   display: flex;
-
   gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
