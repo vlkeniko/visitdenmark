@@ -9,11 +9,17 @@ import amusementpark from "../icons/amusementpark.png";
 import park from "../icons/amusementpark.png";
 import boat from "../icons/boat.png";
 import restaurant from "../icons/restaurant.png";
+import { useRef } from "react";
 
 export default function Subcategory({ subcategory, main }) {
+  const ref = useRef();
   /* console.log(main) */
   return (
-    <a href={`/categories/${main}/${subcategory.Id}`} className="card">
+    <a
+      href={`/categories/${main}/${subcategory.Id}`}
+      className="card"
+      ref={ref}
+    >
       {/*This might be crazy, but it displays icons based on their name*/}
 
       {subcategory?.name === "Zoos and Animal Parks" ? (
@@ -75,6 +81,17 @@ export default function Subcategory({ subcategory, main }) {
       ) : (
         ""
       )}
+
+      {/*This huge if statement is for the background colors*/}
+
+      {/*Attractions
+      {subcategory.MainCategory?.Name === "Attractions"
+        ? (ref.current.style.backgroundColor = "red")
+        : subcategory.MainCategory?.Name === "Places to eat"
+        ? (ref.current.style.backgroundColor = "blue")
+        : subcategory.MainCategory?.Name === "Activities"
+        ? (ref.current.style.backgroundColor = "black")
+        : ""}*/}
     </a>
   );
 }

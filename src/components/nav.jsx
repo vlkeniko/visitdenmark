@@ -5,9 +5,9 @@
 // Icons + Hover CSS: Razvan
 
 import { NavLink } from "react-router-dom";
-import Explore from "../exploreicon.png";
-import Play from "../playicon.png";
-import Discount from "../discounticon.png";
+import Explore from "../icons/search.svg";
+import Play from "../icons/play.svg";
+import Discount from "../icons/discount.svg";
 
 export default function Nav() {
   return (
@@ -19,6 +19,7 @@ export default function Nav() {
               src={Explore}
               alt="explore"
               style={{ width: "15px", height: "auto"}}
+              className="nav-icon"
             />
 
             <p>Explore</p>
@@ -32,6 +33,7 @@ export default function Nav() {
               src={Play}
               alt="play"
               style={{ width: "15px"}}
+              className="nav-icon"
             />
             <p>Play</p>
           </NavLink>
@@ -43,6 +45,7 @@ export default function Nav() {
               src={Discount}
               alt="discount"
               style={{ width: "15px"}}
+              className="nav-icon"
             />
 
             <p>Discounts</p>
