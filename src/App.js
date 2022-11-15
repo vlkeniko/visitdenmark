@@ -9,6 +9,7 @@ import PlayFamily from "./pages/playpages/PlayFamily";
 import PlayNightlife from "./pages/playpages/PlayNightlife";
 import PlayCulture from "./pages/playpages/PlayCulture";
 import PlayNature from "./pages/playpages/PlayNature";
+import Elements from "./components/Elements";
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
         <Route path="/playnightlife" element={<PlayNightlife />} />
         <Route path="/playculture" element={<PlayCulture />} />
         <Route path="/playnature" element={<PlayNature />} />
+        <Route path="/categories/:categoryid/:subcategoryid" element={<Elements />} />
       </Routes>
     </div>
   );

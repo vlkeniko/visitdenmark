@@ -10,9 +10,10 @@ import park from "../icons/amusementpark.png";
 import boat from "../icons/boat.png";
 import restaurant from "../icons/restaurant.png";
 
-export default function Subcategory({ subcategory }) {
+export default function Subcategory({ subcategory, main }) {
+  /* console.log(main) */
   return (
-    <div className="card">
+    <a href={`/categories/${main}/${subcategory.Id}`} className="card">
       {/*This might be crazy, but it displays icons based on their name*/}
 
       {subcategory?.name === "Zoos and Animal Parks" ? (
@@ -73,6 +74,6 @@ export default function Subcategory({ subcategory }) {
       ) : (
         ""
       )}
-    </div>
+    </a>
   );
 }
